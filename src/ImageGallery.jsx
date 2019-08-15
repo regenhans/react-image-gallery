@@ -904,12 +904,14 @@ export default class ImageGallery extends React.Component {
                 ))
               }
               <img
+                referrerpolicy='no-referrer'
                 alt={item.originalAlt}
                 src={item.original}
               />
             </picture>
           :
             <img
+              referrerpolicy='no-referrer'
               src={item.original}
               alt={item.originalAlt}
               srcSet={item.srcSet}
@@ -936,6 +938,7 @@ export default class ImageGallery extends React.Component {
     return (
       <div className='image-gallery-thumbnail-inner'>
         <img
+          referrerpolicy='no-referrer'
           src={item.thumbnail}
           alt={item.thumbnailAlt}
           title={item.thumbnailTitle}
